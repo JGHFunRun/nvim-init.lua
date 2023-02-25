@@ -5,6 +5,6 @@ vim.opt.relativenumber = true
 
 vim.opt.mouse = "a"
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 10
 
---vim.opt.colorcolumn
+vim.opt.colorcolumn = "80,120"
