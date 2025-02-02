@@ -1,3 +1,6 @@
+-- Packer is no longer maintained
+-- Only kept just in case
+
 -- Only required if you have packer configured as `opt`
 -- Frankly I'm unsure if packer is configured as `opt` :P
 vim.cmd [[packadd packer.nvim]]
