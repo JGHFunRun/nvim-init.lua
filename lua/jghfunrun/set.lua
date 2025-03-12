@@ -7,4 +7,4 @@ vim.opt.mouse = "a"
 
 vim.opt.scrolloff = 10
 
-vim.opt.colorcolumn = "80,120"
+vim.opt.colorcolumn = "80,120,132"
