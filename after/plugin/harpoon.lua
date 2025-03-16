@@ -23,7 +23,7 @@ function index_iter(iter)
 	end
 end
 
-keys = '1234567890qwertyuiop'
+local keys = '1234567890qwertyuiop'
 
 for i, key in index_iter(keys:gmatch('.'))
 do
