@@ -8,14 +8,25 @@ function map_key(key, n)
 	vim.keymap.set("n", "<leader>h"..key, function() ui.nav_file(n) end)
 end
 
-for i=1,9,1
-do
-	map_key(i, i)
+-- surely there is something built into lua that does this...
+function index_iter(iter)
+	local i = 1
+
+	return function()
+		local i_save = i
+		i = i+1
+
+		local element = iter()
+		if element == nil then return nil end
+
+		return i_save, element
+	end
 end
 
-map_key(0, 10)
+keys = '1234567890qwertyuiop'
 
-for i, key in ipairs({'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'})
+for i, key in index_iter(keys:gmatch('.'))
 do
-	map_key(key, i+10)
+	map_key(key, i)
+	--print('i = '..i..'; key = '..key)
 end
