@@ -18,7 +18,7 @@ function index_iter(iter)
 		local element = iter()
 		if element == nil then return nil end
 
-		return i_save, element
+		return i, element
 	end
 end
 
