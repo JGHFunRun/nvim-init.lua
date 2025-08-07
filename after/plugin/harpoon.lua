@@ -10,10 +10,9 @@ end
 
 -- surely there is something built into lua that does this...
 function index_iter(iter)
-	local i = 1
+	local i = 0
 
 	return function()
-		local i_save = i
 		i = i+1
 
 		local element = iter()
