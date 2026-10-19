@@ -13,11 +13,11 @@ git clone https://github.com/jghfunrun/nvim-init.lua.git ~/.config/nvim
 Powershell:
 
 ```pwsh
-git clone https://github.com/jghfunrun/nvim-init.lua.git $env:AppDataLocal/nvim
+git clone https://github.com/jghfunrun/nvim-init.lua.git $env:LocalAppData\nvim
 ```
 
 Command prompt:
 
 ```bat
-git clone https://github.com/jghfunrun/nvim-init.lua.git %AppDataLocal%/nvim
+git clone https://github.com/jghfunrun/nvim-init.lua.git %LocalAppData%\nvim
 ```
